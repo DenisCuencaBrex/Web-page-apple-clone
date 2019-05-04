@@ -28,30 +28,35 @@ body{
 }
 
 nav{
- width: 70em;
+ width: 60em;
  background: lightgray;
  background: linear-gradient(rgb(131, 131, 131) 50%,rgb(112, 112, 112) 50%);
- height: 2.5em;
+ height: 2em;
  margin: 2em auto;
  border-radius: .2em;
  border: 1px solid rgb(116, 115, 115);
 }
 
-nav ul{
+.nav-bar ul{
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0em;
   overflow: hidden;
+
 }
 
-li{
+.nav-bar li{
+  margin-top: 1px;
+  padding-right: 0.3em;
+  height: 32px;
   float: left;
-  margin-top: 0.7em;
-  margin-left: 0.4em;
+  margin-left: 1.4em;
+  border-right: 1px solid black;
 }
+
+
 
 .nav-bar li a{
-  padding: 3em;
+  padding-right: 2em;
   font-size: .8em;
   color: white;
   text-decoration: none;
@@ -63,8 +68,9 @@ li img{
   padding-right: 1em;
 }
 
-.bar-search{
 
+.nav-bar li.bar-search{
+  border: none;
 }
 
 .text{
@@ -84,7 +90,7 @@ li img{
 
 }
 
-.holi{
+.text-3{
   color: white;
   padding-top: 100px;
   font-size: 150%;
@@ -104,16 +110,14 @@ li img{
 .left{
   font:9.5px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   color: dimgray;
-  padding-left: 10em;
-  margin: 0;
   float: left;
+  padding-left: 200px
 }
 
-.right{
-
-}
 
 .right ul{
+  padding-left: 50px;
+    display: flex;
     list-style: none;
     overflow: hidden;
     font:9.5px/15px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
@@ -121,15 +125,16 @@ li img{
 }
 
 .right li{
+  padding: 1em;
+  display: block;
   border-right: 0.3px solid lightgray;
-  padding-right: 1em;
-  padding-left: 1em;
+
 }
 
 
 
 .right li.flag{
   border:none;
-  padding: 0;
+  padding-left: 1em;
   width: 10%;
 }
