@@ -28,7 +28,7 @@ body{
 }
 
 nav{
- width: 60em;
+ width: 52em;
  background: lightgray;
  background: linear-gradient(rgb(131, 131, 131) 50%,rgb(112, 112, 112) 50%);
  height: 2em;
@@ -38,14 +38,18 @@ nav{
 }
 
 .nav-bar ul{
+  padding: 0;
   list-style: none;
   margin-top: 0em;
   overflow: hidden;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-bar li{
-  margin-top: 1px;
-  padding-right: 0.3em;
+  margin-top: 0.2px;
+  padding-right: 0;
   height: 32px;
   float: left;
   margin-left: 1.4em;
@@ -53,15 +57,26 @@ nav{
   border-image: 
   linear-gradient(
     to right,
-    gray 40%, 
+    dimgray 40%, 
     black,
      50%, 
-    gray
+    dimgray
   ) 0 100%;
- 
+
 }
 
+.nav-bar li.logo img{
+  margin-top: 5px;
+}
+
+.nav-bar li.logo{
+  margin-left: 10px;
+  padding: 0;
+}
+
+
 .nav-bar li.bar-search{
+  margin-top: 5px;  
   border: none;
 }
 
