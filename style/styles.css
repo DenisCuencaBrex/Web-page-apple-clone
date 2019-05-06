@@ -12,7 +12,7 @@ body{
 }
 
 .nav-bar{
-  background: url("images/hero.jpg")no-repeat 50% 90%;
+  background: url("../images/hero.jpg")no-repeat 50% 90%;
   background-size: cover;
   min-height: 80%;
   min-width: 1024px;
@@ -28,41 +28,51 @@ body{
 }
 
 nav{
- width: 52em;
- background: lightgray;
- background: linear-gradient(rgb(131, 131, 131) 50%,rgb(112, 112, 112) 50%);
- height: 2em;
- margin: 2em auto;
- border-radius: .2em;
- border: 1px solid rgb(116, 115, 115);
-}
-
-.nav-bar ul{
-  padding: 0;
-  list-style: none;
-  margin-top: 0em;
   overflow: hidden;
-  align-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.nav-bar li{
-  margin-top: 0.2px;
-  padding-right: 0;
-  height: 32px;
-  float: left;
-  margin-left: 1.4em;
-  border-right: 4.5px solid gray;
-  border-image: 
-  linear-gradient(
-    to right,
-    dimgray 40%, 
-    rgb(31, 31, 31),
-     50%, 
-    dimgray
-  ) 0 100%;
+nav ul{
+  margin: 30px auto;
+  width: 85%;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #8b8b8b, #717171 49%, #5e5e5e 50%, #787878);
+  border-radius: 5px;
+}
+nav li{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 25px;
+}
+nav input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  height: 20px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 1) inset;
+}
 
+nav ul li:first-child::before{
+  border-left:none;
+}
+nav ul li:last-child::after{
+  border-right:none;
+}
+nav ul li::before{
+  border-left: 1px solid rgba(255,255,255,.1);	
+  	content: "";
+	padding: 10px 25px;
+	margin: 0 -25px;
+	position: relative;
+}
+
+nav ul li::after{  
+  border-right: 1px solid rgb(89, 89, 89);	
+  content: "";
+	padding: 10px 29px;
+	margin: 0 -29px;
+	position: relative;
 }
 
 .nav-bar li.logo img{
@@ -89,12 +99,18 @@ nav{
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
-li img{
-  width: 20px;
-  padding-right: 1em;
+.nav-bar li .logo{
+  font-size: 19px;
+  vertical-align: top;
+ 
 }
 
-
+li img{
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 10px;
+}
 
 .text{
   text-align: center;
@@ -109,7 +125,6 @@ li img{
   text-decoration: none;
   color: white;
   padding-top: 200px
-  align-items: center;
 
 }
 
