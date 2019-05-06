@@ -41,7 +41,6 @@ nav{
   list-style: none;
   margin-top: 0em;
   overflow: hidden;
-
 }
 
 .nav-bar li{
@@ -50,12 +49,24 @@ nav{
   height: 32px;
   float: left;
   margin-left: 1.4em;
-  border-right: 1px solid black;
+  border-right: 4px solid gray;
+  border-image: 
+  linear-gradient(
+    to right,
+    gray 40%, 
+    black,
+     50%, 
+    gray
+  ) 0 100%;
+ 
 }
 
-
+.nav-bar li.bar-search{
+  border: none;
+}
 
 .nav-bar li a{
+  padding-top: 1em; 
   padding-right: 2em;
   font-size: .8em;
   color: white;
@@ -69,9 +80,6 @@ li img{
 }
 
 
-.nav-bar li.bar-search{
-  border: none;
-}
 
 .text{
   text-align: center;
