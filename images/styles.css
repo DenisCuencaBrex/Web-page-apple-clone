@@ -53,12 +53,12 @@ nav{
   height: 32px;
   float: left;
   margin-left: 1.4em;
-  border-right: 4px solid gray;
+  border-right: 4.5px solid gray;
   border-image: 
   linear-gradient(
     to right,
     dimgray 40%, 
-    black,
+    rgb(31, 31, 31),
      50%, 
     dimgray
   ) 0 100%;
